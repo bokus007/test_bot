@@ -7,6 +7,7 @@ bot = telebot.TeleBot(config('bot_token'))
 wait_type = 0   # тип состояния ожидания
                 # 1-сумма для пересчета валюты
 
+
 def send_kb_main(message, txt="Выберите что-нибудь ⬇"):
     kb = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = telebot.types.KeyboardButton("Меню 2")
